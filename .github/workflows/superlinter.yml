@@ -12,8 +12,8 @@ jobs:
    - name: Checkout code
      uses: actions/checkout@v3
 
-  - name: Clean Docker cache
-    run: docker image prune -af
+   - name: Clean Docker cache
+     run: docker image prune -af
 
    - name: Run Super-Linter
      uses: github/super-linter@v4
